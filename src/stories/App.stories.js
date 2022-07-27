@@ -7,19 +7,19 @@ const stories = storiesOf('App Payment Modules', module)
 
 stories.add('Payment', () => {
   return (
-    <>
-      <Payment
-        amount={'10.5'}
-        onLogged={data => {
-          console.log(data)
-        }}
-        onDisconnected={data => {
-          console.log(data)
-        }}
-        onPaid={data => {
-          console.log(data)
-        }}
-      />
-    </>
+    <Payment
+      key={'CLIENT_KEY_ID'}
+      amount={'10.5'}
+      onLogged={data => {
+        console.log(data)
+      }}
+      onDisconnected={data => {
+        console.log(data)
+      }}
+      onPaid={data => {
+        console.log(data)
+      }}
+      currency={'HTG'}
+    />
   )
 })
